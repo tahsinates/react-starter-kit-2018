@@ -24,3 +24,14 @@ babel-loader: This is the loader that helps webpack compile .js files
 @babel/plugin-proposal-export-namespace-from Supports syntax like import * as ns from '../path/to/module';
 @babel/plugin-proposal-throw-expressions New syntax to throw exceptions from within an expression context.
 @babel/plugin-syntax-dynamic-import This is what helps with code splitting. Webpack ships with code splitting by default (Since webpack 1). But when you want to code split in webpack while you are using babel, then you need to use this plugin.
+
+Package.json configuration info:
+
+webpack-dev-server serves a webpack app and updates the browser on changes.
+--mode development tells webpack to compile the code in development mode. This is basically to make the compilation time faster.
+--config config/webpack.base.config.js So by default if you have webpack.config.js file in your root app folder, you don’t have to supply the --config flag to it. But since I want to explicitly add all my webpack related configurations in the config folder, I pass in --config option that tells webpack where to look for the configuration
+--open command opens the browser, when webpack is done with its compilation.
+--hot flag tells webpack to actively watch for code changes in the src folder. If any changes happen, it reloads the browser.
+--history-api-fallback This option enables History API Fallback support in webpack-dev-server, effectively asking the server to fallback to index.html in the event that a requested resource cannot be found.
+--env.PLATFORM & --env.VERSION are custom flags that I pass in my configuration (more on this later).
+
