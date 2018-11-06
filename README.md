@@ -1,7 +1,5 @@
 Used Packages;
 
-URL : https://medium.freecodecamp.org/how-to-combine-webpack-4-and-babel-7-to-create-a-fantastic-react-app-845797e036ff
-
 webpack: We need Webpack to bundle our code.
 
 webpack-cli: We will be using some CLI features of Webpack to make our lives easier while writing some scripts.
@@ -47,4 +45,7 @@ babel-loader: This is the loader that helps webpack compile .js files
 @babel/plugin-proposal-throw-expressions New syntax to throw exceptions from within an expression context.
 
 @babel/plugin-syntax-dynamic-import This is what helps with code splitting. Webpack ships with code splitting by default (Since webpack 1). But when you want to code split in webpack while you are using babel, then you need to use this plugin.
+
+
+URL : https://medium.freecodecamp.org/how-to-combine-webpack-4-and-babel-7-to-create-a-fantastic-react-app-845797e036ff
 
