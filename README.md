@@ -56,7 +56,6 @@ webpack-dev-server serves a webpack app and updates the browser on changes.
 --hot flag tells webpack to actively watch for code changes in the src folder. If any changes happen, it reloads the browser.
 --history-api-fallback This option enables History API Fallback support in webpack-dev-server, effectively asking the server to fallback to index.html in the event that a requested resource cannot be found.
 --env.PLATFORM & --env.VERSION are custom flags that I pass in my configuration (more on this later).
-=======
 
 URL : https://medium.freecodecamp.org/how-to-combine-webpack-4-and-babel-7-to-create-a-fantastic-react-app-845797e036ff
 >>>>>>> 6da8973429d717ab4167fec5e1d20c4de59f5b6b
